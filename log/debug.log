@@ -1,0 +1,363 @@
+2017-09-29 15:12:27,906 [Thread-10:6608] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cat-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 33, in cat_images_list
+    i = CatImage.objects.get(id=current)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\db\models\query.py", line 385, in get
+    self.model._meta.object_name
+cat_images.models.DoesNotExist: CatImage matching query does not exist.
+2017-10-01 23:00:20,050 [Thread-7:7212] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 92, in upload_images
+    image_instance.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 35, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_J7upJLQ.png>
+2017-10-01 23:02:09,904 [Thread-9:6996] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 92, in upload_images
+    image_instance.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 35, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_ZJzRSbZ.png>
+2017-10-01 23:06:34,249 [Thread-7:6988] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 91, in upload_images
+    image_instance.save_image('test.png', image.read())
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 32, in save_image
+    self.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 35, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_wZszXj7.png>
+2017-10-01 23:14:46,286 [Thread-7:5484] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 91, in upload_images
+    image_instance.save_image('test.png', image.read())
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 33, in save_image
+    self.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 36, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_OBTPOPG.png>
+2017-10-01 23:15:39,816 [Thread-8:4424] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 91, in upload_images
+    image_instance.save_image('test.png', image.read())
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 33, in save_image
+    self.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 36, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_Mx0Wz79.png>
+2017-10-01 23:18:46,128 [Thread-10:7192] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 91, in upload_images
+    image_instance.save_image('test.png', image.read())
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 33, in save_image
+    self.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 36, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_bEVhtr3.png>
+2017-10-01 23:34:16,947 [Thread-7:7376] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 109, in upload_images
+    image_instance.save_image('test.png', pil_image.read())
+AttributeError: 'JpegImageFile' object has no attribute 'read'
+2017-10-01 23:36:48,001 [Thread-7:2724] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 27, in save_image
+    content = ContentFile(response)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\files\base.py", line 158, in __init__
+    super(ContentFile, self).__init__(stream_class(content), name=name)
+TypeError: a bytes-like object is required, not 'JpegImageFile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 109, in upload_images
+    image_instance.save_image('test.png', pil_image)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 31, in save_image
+    self.image.save(image_name, content, save=False)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\db\models\fields\files.py", line 91, in save
+    self.name = self.storage.save(name, content, max_length=self.field.max_length)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\files\storage.py", line 54, in save
+    return self._save(name, content)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\files\storage.py", line 351, in _save
+    for chunk in content.chunks():
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\files\base.py", line 85, in chunks
+    data = self.read(chunk_size)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\files\utils.py", line 19, in <lambda>
+    read = property(lambda self: self.file.read)
+AttributeError: 'JpegImageFile' object has no attribute 'read'
+2017-10-01 23:43:22,036 [Thread-7:6312] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 93, in upload_images
+    a.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 34, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_EmmTiXg.png>
+2017-10-01 23:46:44,446 [Thread-7:6988] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 94, in upload_images
+    a.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 34, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_LaE2xbL.png>
+2017-10-01 23:49:48,226 [Thread-7:6812] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 94, in upload_images
+    a.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 35, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test.png>
+2017-10-02 01:21:02,605 [Thread-7:6028] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 93, in upload_images
+    image_instance.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 36, in zip_images
+    image = Image.open(self.image)  # 通过cp.picture 获得图像
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 2519, in open
+    % (filename if filename else fp))
+OSError: cannot identify image file <ImageFieldFile: cat/test_lAETXW3.png>
+2017-10-02 01:31:31,712 [Thread-7:6536] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /upload-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 94, in upload_images
+    image_instance.zip_images()
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\models.py", line 54, in zip_images
+    image.save(os.path.join(DIR, 'new') + str(self.image))  # 保存到原路径
+  File "C:\Users\Administrator\cat\lib\site-packages\PIL\Image.py", line 1890, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\Administrator\\Desktop\\yun_cat\\cat_images\\newcat/tmp_496754950o6zAJsx_dkY9yWLPP1j_VksGSflY9c6c51cb7dbd6ba7286ee537168f8e5a.png'
+2017-10-03 00:57:57,692 [Thread-8:6576] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cat-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 33, in cat_images_list
+    i = CatImage.objects.get(id=current)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\db\models\query.py", line 385, in get
+    self.model._meta.object_name
+cat_images.models.DoesNotExist: CatImage matching query does not exist.
+2017-10-05 01:42:02,601 [Thread-10:7028] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cat-images/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Administrator\Desktop\yun_cat\cat_images\views.py", line 31, in cat_images_list
+    cat_images = CatImage.objects.all().order_by(sort)
+AttributeError: type object 'CatImage' has no attribute 'objects'
+2017-10-06 15:55:06,201 [Thread-10:3916] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feedback/feedback/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\Administrator\cat\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 706, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 664, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 411, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    separators=separators
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 200, in encode
+    chunks = list(chunks)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 429, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 403, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 436, in _iterencode
+    o = _default(o)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\utils\encoders.py", line 70, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <CatImage: http://img7.ph.126.net/n1R4ub-Pweeb2MKSGmm-5Q==/6597266579238773637.jpg> is not JSON serializable
+2017-10-06 15:57:38,603 [Thread-7:2464] [django.request:124] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /feedback/feedback/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\cat\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\Administrator\cat\lib\site-packages\django\template\response.py", line 109, in render
+    self.content = self.rendered_content
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 706, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 664, in get_context
+    'content': self.get_content(renderer, data, accepted_media_type, renderer_context),
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 411, in get_content
+    content = renderer.render(data, accepted_media_type, renderer_context)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\renderers.py", line 105, in render
+    separators=separators
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 200, in encode
+    chunks = list(chunks)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 429, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 403, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 324, in _iterencode_list
+    yield from chunks
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 403, in _iterencode_dict
+    yield from chunks
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 436, in _iterencode
+    o = _default(o)
+  File "C:\Users\Administrator\cat\lib\site-packages\rest_framework\utils\encoders.py", line 70, in default
+    return super(JSONEncoder, self).default(obj)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\json\encoder.py", line 179, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <CatImage: http://img7.ph.126.net/n1R4ub-Pweeb2MKSGmm-5Q==/6597266579238773637.jpg> is not JSON serializable
