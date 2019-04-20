@@ -1,0 +1,121 @@
+# dependencies
+/webapp/node_modules
+# roadhog-api-doc ignore
+/webapp/src/utils/request-temp.js
+
+# production
+/webapp/dist
+*.pyc
+
+__pycache__/
+/__pycache__
+./__pycache__/
+/__pycache__/
+yun_cat/__pycache__
+cat_images/migrations
+cat_articles/__pycache__
+
+
+
+# misc
+.DS_Store
+/webapp/npm-debug.log*
+/webapp/yarn-error.log
+
+/coverage
+.idea
+/webapp/yarn.lock
+/webapp/package-lock.json
+*bak
+/webapp/jsconfig.json
+.vscode
+
+# visual studio code
+.history
+*.log
+
+functions/mock
+.temp/**
+
+# umi
+.umi
+.umi-production
+
+# screenshot
+screenshot
+
+/webapp/coverage
+
+*.pyc
+.idea
+.installed.cfg
+*.egg
+*.egg-info/
+/bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# C extensions
+*.so
+
+__pycache__
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+coverage.xml
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+
+# Virtualenv stuff
+.venv/
+
+# Doc stuff
+_build/
+
+# vim
+*.swp
+*.swo
+
+*.idea
+
+.DS_Store
+
+# tzone
+gen-py/
+
+# loacl_env by suyue
+question_and_answer/
+routes/
+others/
+ops/tzone_service/thr.py
+webapp/tutorial/
+venv/
+
+.python-version
+
+# curdman_v2.0 tmp file
+curdman_v2/tmp/
+curdman/
+.zae/
+dev.yaml
+app.yaml
+
