@@ -2,6 +2,7 @@ import requests
 import re
 import os
 import django
+import imghdr
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yun_cat.settings")
 django.setup()
 import time
@@ -62,9 +63,12 @@ for i in range(0, 1000, 30):
             instance.image_url = image_url
 
             content = session.get(image_url, headers=headers, timeout=3).content
+            if not imghdr.what(None, content):
+                continue
             instance.save_image(image_name, content)
             print('储存成功', image_name)
             set_record.add(image_url)
-        except:
+        except Exception as e:
+            print(str(e))
             print("出错, 跳过本次下载")
             continue
